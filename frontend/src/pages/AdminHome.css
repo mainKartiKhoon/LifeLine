@@ -1,0 +1,128 @@
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  /* Header */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+  }
+  
+  /* Close button */
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  /* Body */
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    /* font-size: 0.9rem; */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  /* Footer */
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .close-modal-btn {
+    background-color: #f8d7da;
+    color: #a71d2a;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .open-modal-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #6f42c1;
+    cursor: pointer;
+  }
+  
+  /* Animation */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
